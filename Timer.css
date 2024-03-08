@@ -1,0 +1,197 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media(max-width: 1201px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media(max-width: 1024px) {
+    html {
+        font-size: .7rem;
+    }
+}
+
+@media(max-width: 800px) {
+    html {
+        font-size: .5rem;
+    }
+}
+
+@media(max-width: 596px) {
+    html {
+        font-size: .4rem;
+
+        .time_title {
+            top: 2rem;
+        }
+    }
+}
+
+@media(max-width: 474px) {
+    html {
+        font-size: .3rem;
+
+        .time_title {
+            padding: 3px 5px;
+        }
+    }
+}
+
+@media(max-width: 376px) {
+    html {
+        font-size: .3rem;
+
+        .timer {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: auto 10rem auto;
+            grid-template-columns: repeat(2, auto);
+            grid-gap: 10rem;
+        }
+    }
+}
+
+body {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.input {
+    position: absolute;
+    top: 1rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 500;
+    /* margin-bottom: 6rem; */
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+.timer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.cont {
+    padding: 0 2rem;
+    text-align: center;
+    -webkit-box-shadow: 0 10px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nums {
+    font-size: 8rem;
+    font-weight: 600;
+    border: 2rem solid rgb(44, 43, 43);
+    border-bottom: 4rem solid black;
+    padding: 6px;
+    color: rgb(143, 144, 145);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.time_title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    top: 4rem;
+    background-color: rgb(103, 104, 105);
+    padding: 6px;
+}
+
+.calender {
+    color: rgb(110, 110, 110);
+    text-align: center;
+}
+
+#date {
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    /* background-color: rgb(189, 190, 190); */
+    top: 0;
+    color-scheme: dark;
+}
+
+@media (max-width: 1024px) {
+    #date {
+        font-size: 3rem;
+    }
+}
+
+button {
+    position: absolute;
+    top: 3rem;
+    left: 5rem;
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(133, 235, 196);
+    cursor: pointer;
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 376px) {
+    button {
+        font-size: 1.5rem;
+    }
+}
+
+button:hover {
+    background-color: rgb(149, 214, 189);
+    -webkit-transform: translateY(-1.7px);
+    -ms-transform: translateY(-1.7px);
+    transform: translateY(-1.7px);
+}
+
+button:active {
+    -webkit-transform: translateY(1.7px);
+    -ms-transform: translateY(1.7px);
+    transform: translateY(1.7px);
+    background-color: rgb(133, 235, 196);
+}
+
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
